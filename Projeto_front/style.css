@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+}
+@media(max-width: 425px){
+    html{
+        font-size: small;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    strong{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 1024){
+    html{
+        font-size: large;
+    }
+}
+    
+p {
+    font-size: 1rem;
+}
+strong{
+   font-size: 1rem; 
+}
+
+
+.header{
+    width: 100%;
+    text-align: center;
+    
+}
+.header p{
+    
+    color: #2CC4C9;
+    font-weight: 400;
+}
+.informações_container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right:20px ;
+    justify-content: space-between;
+}
+.informações{
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+   align-items: baseline;
+    justify-content: space-evenly;
+    width: 45vw;
+    height: 25vh;
+    color: white;
+    background-color: #1E9A9E;
+    border-radius: 0 40% 40% 0;
+}
+.informações_line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    
+}
+.my_img{
+    display: flex;
+    height: 21vh;
+    width: 21vw;
+    position: absolute;
+    background-color: white;
+    border: lightgray solid 1px;
+    left: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.my_img img{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+.nome_container{
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.2rem;
+}
+.nome_container p{
+    color: #2CC4C9;
+    font-size: 1.2rem;
+}
+main{
+    display: flex;
+}
+.left_container{
+    width: 50%;
+}
+.subtitle{
+    margin-top: 10px;
+    color: #2CC4C9;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.section_container{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+
+}
+dt{
+    font-weight: 600;
+}
+dd{
+    padding-left: 5% ;
+}
+#skill_container{
+    width: 87%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.right_container{
+    width: 50%;
+    background-color: #e9ecef;
+}
+
+
