@@ -1,28 +1,14 @@
 body{
     margin: 0;
 }
-@media(max-width: 425px){
-    html{
-        font-size: small;
-    }
-    p{
-        font-size: 0.8rem;
-    }
-    strong{
-        font-size: 0.8rem;
-    }
-}
-@media(max-width: 1024){
-    html{
-        font-size: large;
-    }
-}
+
     
 p {
     font-size: 1rem;
 }
 strong{
    font-size: 1rem; 
+white-space: nowrap;
 }
 
 
@@ -36,7 +22,7 @@ strong{
     color: #2CC4C9;
     font-weight: 400;
 }
-.informações_container{
+.informacoes_container{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -44,18 +30,24 @@ strong{
     padding-right:20px ;
     justify-content: space-between;
 }
-.informações{
+.informações {
+
     position: relative;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
    align-items: baseline;
     justify-content: space-evenly;
-    width: 45vw;
-    height: 25vh;
+    width: auto;
+    min-width: 35vw;
+
+    min-height: 30vh;
     color: white;
+
     background-color: #1E9A9E;
+
     border-radius: 0 40% 40% 0;
+   
 }
 .informações_line{
     width: 100%;
@@ -66,12 +58,12 @@ strong{
 }
 .my_img{
     display: flex;
-    height: 21vh;
-    width: 21vw;
+    height: 20vh;
+    width: 20vw;
     position: absolute;
     background-color: white;
     border: lightgray solid 1px;
-    left: 55%;
+    left: 74%;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -86,6 +78,7 @@ strong{
 .nome_container{
 font-family: 'Times New Roman', Times, serif;
 font-size: 1.2rem;
+
 }
 .nome_container p{
     color: #2CC4C9;
@@ -118,12 +111,127 @@ dd{
 #skill_container{
     width: 87%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
+#skill_container div{
+    width: max-content;
+}
+
 .right_container{
     width: 50%;
     background-color: #e9ecef;
+}
+.mode-container{
+    border-radius: 10%;
+    background-color:#15787B ;
+    width: 4%;
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+.mode-container i{
+    cursor: pointer;
+}
+
+@media(max-width: 1024px){
+    html{
+        font-size: large;
+    }
+      .nome_container{
+        font-size: 1.8em;
+    }
+    .nome_container p{
+        font-size: 2rem;
+    }
+   
+}
+@media(max-width: 768px){
+    .informações{
+        padding: 0px;
+        padding-left: 1em;
+        gap: 20px;
+    }
+    .my_img{
+        left: 82%;
+    }
+}
+@media(max-width: 425px){
+    #skill_container{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 425px){
+    
+    html{
+        font-size: small;
+    }
+    body{
+      margin-top: 90px;  
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    strong{
+        font-size: 0.8rem;
+    }
+    .informações{
+        padding-left: 2px;
+        gap: 20px;
+        width: stretch;
+        justify-content: center;
+        height: 146px;
+        max-width: 50%;
+        
+    }
+    .my_img{
+        width: 50%;
+        left: 74%;
+        
+    }
+    .my_img img{
+        height: 95%;
+    }
+   
+    .informacoes_container{
+        padding: 0 8px 0 0;
+    }
+    .nome_container{
+        font-size: 1rem;
+    }
+    .nome_container p{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 320px){
+    .informações{
+        min-height: auto;
+        height: 140px;
+        justify-content: center;
+    }
+    .my_img{
+       width: 80px;
+       height: 80px;
+       left: 82%;
+        
+    }
+    .my_img img{
+        height: 95%;
+    }
+    .nome_container{
+        font-size: 0.75rem;
+    }
+    .nome_container p{
+        font-size: 0.75rem;
+    }
 }
 
 
