@@ -13,10 +13,11 @@
     <body>
             <header>
                 <div class="header">
+                    
                     <p>Portifólio pessoal Tiago Schmitz da Silva</p>
                     <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit</em>
                 </div>
-                <div class="informações_container">
+                <div class="informacoes_container">
                     <div class="informações">
                     <div class="informações_line"><i class="bi bi-telephone-fill"></i><strong>41 9999-99999</strong></div>
                     
@@ -110,11 +111,38 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum impedit ea, nulla quia eum quas similique quaerat quae cumque minima consequuntur non nostrum aspernatur reiciendis earum saepe, animi voluptates totam.</p>
                 </div>
             </main>
+            <div class="mode-container">
+                <i class="bi bi-cloud-moon-fill" id="icone_modo" onclick="alterar_modo(dark_mode)"></i>
+
+            </div>
 
     </body>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-           alert("Professor fiz o que deu no prazo que tinha, já que trabalhei no fim de semana, não usei o chat gpt :)")
-        });
+   var dark_mode = false;
+
+document.addEventListener("DOMContentLoaded", function() {
+    alert("Professor fiz o que deu no prazo que tinha, já que trabalhei no fim de semana, não usei o chat gpt :)");
+});
+
+function alterar_modo() {
+    var section = document.getElementsByClassName("right_container")[0];
+    var corpo = document.body; 
+    var icone=document.getElementById("icone_modo");
+
+    dark_mode = !dark_mode; 
+
+
+    if (dark_mode == true) {
+        corpo.style.color = "white";
+        corpo.style.backgroundColor = "#121212";
+        section.style.backgroundColor = "#484F4F";
+        icone.className="bi bi-cloud-sun-fill";
+    } else {
+        corpo.style.color = "black";
+        corpo.style.backgroundColor = "white";
+        section.style.backgroundColor = "#e9ecef";
+        icone.className="bi bi-cloud-moon-fill";
+    } 
+}
     </script>
 </html>
